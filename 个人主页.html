@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 2em;
+            margin: 1em 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .blog-post {
+            margin: 1em 0;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>个人网页</h1>
+</header>
+
+<nav>
+    <a href="#about">个人简介</a>
+    <a href="#blog">博客</a>
+    <a href="#contact">联系我</a>
+</nav>
+
+<section id="about">
+    <h2>个人简介</h2>
+    <p>你好，我是[你的名字]，一名[你的职业或兴趣领域]。我热爱[你的爱好或专长]，并且在[相关领域]有丰富的经验。</p>
+</section>
+
+<section id="blog">
+    <h2>博客</h2>
+    <div class="blog-post">
+        <h3>博客文章标题 1</h3>
+        <p>这是第一篇博客文章的摘要。</p>
+    </div>
+    <div class="blog-post">
+        <h3>博客文章标题 2</h3>
+        <p>这是第二篇博客文章的摘要。</p>
+    </div>
+    <!-- 你可以添加更多博客文章 -->
+</section>
+
+<section id="contact">
+    <h2>联系我</h2>
+    <form class="contact-form">
+        <input type="text" name="name" placeholder="你的名字" required>
+        <input type="email" name="email" placeholder="你的邮箱" required>
+        <textarea name="message" rows="5" placeholder="你的留言" required></textarea>
+        <button type="submit">发送</button>
+    </form>
+</section>
+
+<footer>
+    <p>关注我:</p>
+    <div class="social-links">
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://www.github.com" target="_blank">GitHub</a>
+        <!-- 你可以添加更多社交媒体链接 -->
+    </div>
+    <p>&copy; 2024 [你的名字]. 保留所有权利。</p>
+</footer>
+
+</body>
+</html>
