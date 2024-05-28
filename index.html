@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人网页</title>
+    <title>ian's personal homepage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,8 +13,8 @@
             color: #333;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #ACC3F5;
+            color: #000000;
             padding: 1em 0;
             text-align: center;
         }
@@ -60,6 +60,8 @@
         .contact-form {
             max-width: 600px;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
         }
         .contact-form input, .contact-form textarea {
             width: 100%;
@@ -75,6 +77,7 @@
             padding: 10px 20px;
             border-radius: 4px;
             cursor: pointer;
+            align-self: flex-end;
         }
         .contact-form button:hover {
             background-color: #45a049;
@@ -114,7 +117,7 @@
 <section id="contact">
     <h2>联系我</h2>
     <form class="contact-form">
-        <input type="text" name="name" placeholder="你的微信" required>
+        <input type="text" name="name" placeholder="你的名字" required>
         <input type="email" name="email" placeholder="你的邮箱" required>
         <textarea name="message" rows="5" placeholder="你的留言" required></textarea>
         <button type="submit">发送</button>
