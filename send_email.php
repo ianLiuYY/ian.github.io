@@ -21,5 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "邮件发送失败，请稍后再试。";
     }
+}else {
+    echo "无效的请求方法";
 }
+
 ?>
