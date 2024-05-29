@@ -137,9 +137,11 @@
 </section>
     <!-- google recaptcha验证密钥 -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <button class="toggle-btn" onclick="toggleSocialLinks()">关注我</button>
-<footer>
     
+    <!-- 页脚按钮 -->
+<button class="toggle-btn" onclick="toggleFooter()">显示/隐藏 页脚</button>
+    
+<footer>
     <p>关注我:</p>
     <div class="social-links">
         <a href="https://www.twitter.com" target="_blank">Twitter</a>
@@ -151,12 +153,12 @@
 </footer>
 
 <script>
-    function toggleSocialLinks() {
-        var links = document.querySelector('.social-links');
-        if (links.style.display === "none" || links.style.display === "") {
-            links.style.display = "block";
+    function toggleFooter() {
+        var links = document.getElementById('footer');
+        if (footer.style.maxHeight === "0px" || footer.style.maxHeight === "") {
+            footer.style.maxHeight = "300px";
         } else {
-            links.style.display = "none";
+            footer.style.maxHeight = "0px";
         }
     }
 </script>
