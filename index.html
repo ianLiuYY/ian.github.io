@@ -51,7 +51,7 @@
         }
         .social-links a {
             margin: 0 10px;
-            color: #4CAF50;
+            color: #ACC3F5;
             text-decoration: none;
         }
         .blog-post {
@@ -82,12 +82,24 @@
         .contact-form button:hover {
             background-color: #45a049;
         }
+        .toggle-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1em;
+        }
+        .toggle-btn:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>个人网页</h1>
+    <h1>Ian's Personal Homepage</h1>
 </header>
 
 <nav>
@@ -137,5 +149,16 @@
     <p>&copy; 2024 [ian]. 保留所有权利。</p>
 </footer>
 
+<script>
+    function toggleSocialLinks() {
+        var links = document.querySelector('.social-links');
+        if (links.style.display === "none" || links.style.display === "") {
+            links.style.display = "block";
+        } else {
+            links.style.display = "none";
+        }
+    }
+</script>
+    
 </body>
 </html>
